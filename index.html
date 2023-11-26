@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="search-bar">
+        <p>To Do App | SUMMIT</p>
+        <div class="input-conrainer">
+            <input type="text" placeholder="Add your plan..." />
+            <input type="date"  />
+            <button id="search-btn">Add</button>
+            <button id="edit-btn">Edit</button>
+        </div>
+        <div class="filter-conrainer">
+           <div class="filter-btns">
+                <button id="filter-btn" data-filter-type="all">All</button>
+                <button id="filter-btn" data-filter-type="pending">Pending</button>
+                <button id="filter-btn" data-filter-type="completed">Completed</button>
+           </div>
+                <button id="delete-btn">Delete All</button>
+        </div>
+    </div>
+    <div id="alert-message"></div>
+    <div class="tabel-container">
+        <table>
+           <thead> 
+            <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+           </thead>
+           <tbody></tbody>
+        </table>
+    </div>
+<script src="./js/main.js" type="module"></script>
+</body>
+</html>
